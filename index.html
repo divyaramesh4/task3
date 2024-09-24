@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowdfunding Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Crowdfunding Platform</h1>
+        <button onclick="showCreateProject()">Create Project</button>
+    </header>
+    
+    <section id="create-project-section" style="display:none;">
+        <h2>Create a Project</h2>
+        <form id="create-project-form">
+            <input type="text" id="project-title" placeholder="Project Title" required>
+            <textarea id="project-description" placeholder="Project Description" required></textarea>
+            <input type="number" id="funding-goal" placeholder="Funding Goal" required>
+            <input type="file" id="project-image" accept="image/*">
+            <button type="submit">Create Project</button>
+        </form>
+    </section>
+
+    <section id="projects-list">
+        <h2>Projects</h2>
+        <div id="project-container">
+            <!-- Projects will be dynamically added here -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
